@@ -1,8 +1,20 @@
 /*
 ---01 Typography System
 
--Font Family : "Rubik"
+-Font Family : "Inter","Clicker Script"
 default : san-serif
+
+
+header
+  -hero         -false
+  -about        -true
+  -what I do    -false
+  -work         -true
+  -education    -false
+  -experience   -true
+  -testimonial  -false
+  -blog         -true
+  -contact      -true
  
 
 -Font  Size (px)
@@ -43,6 +55,7 @@ Gray : #555
   --primary: #ffbd33;
   --primary-shade: #b8651b;
   --text: #fbf8f5;
+  --text-shade: #c9c6c4;
 }
 
 * {
@@ -62,7 +75,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   color: var(--text);
   font-weight: 400;

@@ -13,6 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Style Link -->
     <link rel="stylesheet" href="./css/skins/color-1.css" />
     <link rel="stylesheet" href="./css/general.css" />
@@ -20,6 +24,29 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <nav class="nav-group">
+        <div class="logo">My Portfolio</div>
+      
+      <ul class="nav">
+        <li class="nav-list">
+          <a href="#about" class="nav-link">about</a>
+        </li>
+        <li class="nav-list">
+          <a href="#work" class="nav-link">work</a>
+        </li>
+        <li class="nav-list">
+          <a href="#exp" class="nav-link">my experience</a>
+        </li>
+        <li class="nav-list">
+          <a href="#blog" class="nav-link">blog</a>
+        </li>
+        <li class="nav-list">
+          <a href="#contact" class="nav-link">contact</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
     <section class="section-hero">
       <div class="hero">
         <div class="hero-text-box">
@@ -31,7 +58,7 @@
             I want to create websites with the best creativity and team-work. I
             would like to be a good developer now and ever.
           </p>
-          <a href="#" class="btn btn--full">Download Cv &darr;</a>
+          <a href="#about" class="btn btn--full btn--more-detail">More Detail &rarr;</a>
         </div>
         <div class="hero-img-box">
           <picture>
@@ -46,7 +73,8 @@
         </div>
       </div>
     </section>
-    <section class="section-about">
+
+    <section class="section-about" id="about">
       <div class="container">
         <h2 class="heading--secondary-small">Who I am.</h2>
       </div>
@@ -89,6 +117,7 @@
         </div>
       </div>
     </section>
+
     <section class="section-what-i-do">
       <div class="container">
         <h2 class="heading--secondary heading--center">
@@ -667,7 +696,8 @@
         </div>
       </div>
     </section>
-    <section class="section-work">
+
+    <section class="section-work" id="work">
       <div class="container">
         <h2 class="heading--secondary heading--center">
           <span class="heading--underline">My Work</span>
@@ -784,6 +814,7 @@
         </figure>
       </div>
     </section>
+
     <section class="section-edu">
       <div class="container">
         <h2 class="heading--secondary">
@@ -853,7 +884,8 @@
         </div>
       </div>
     </section>
-    <section class="section-exp">
+
+    <section class="section-exp" id="exp">
       <div class="container">
         <h2 class="heading--secondary">
           <span>My Experience</span>
@@ -934,6 +966,211 @@
         </div>
       </div>
     </section>
+
+    <section class="section-testimonial">
+      <div class="container">
+        <h2 class="heading--secondary heading--center">
+          <span>Testimonial</span>
+        </h2>
+      </div>
+      <div
+        class="container grid-testimonial grid--2--cols testimonial-contents"
+      >
+        <div class="testimonial-contents-all">
+          <div class="testimonial-group">
+            <div class="testimonial-photo">
+              <img
+                src="./img/testimonial/testimonial-1.jpg"
+                alt="Testimonial Person"
+                class="testimonial-img"
+              />
+            </div>
+            <div class="testimonial-content">
+              <p class="client-name">Mg Mg</p>
+              <p class="client-position">CEO &mdash; Pro Burgar</p>
+            </div>
+          </div>
+          <div class="testimonial-desc">
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              dicta, quibusdam voluptatibus corporis minus suscipit maxime
+              doloribus laboriosam tempora eum vel adipisci harum quis nisi.
+              Ratione quam labore sit consectetur?
+            </p>
+            <div class="rating-group">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-contents-all">
+          <div class="testimonial-group">
+            <div class="testimonial-photo">
+              <img
+                src="./img/testimonial/testimonial-2.jpg"
+                alt="Testimonial Person"
+                class="testimonial-img"
+              />
+            </div>
+            <div class="testimonial-content">
+              <p class="client-name">Ma Ma</p>
+              <p class="client-position">CEO &mdash; Shwe Ou Bakery</p>
+            </div>
+          </div>
+          <div class="testimonial-desc">
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              dicta, quibusdam voluptatibus corporis minus suscipit maxime
+              doloribus laboriosam tempora eum vel adipisci harum quis nisi.
+              Ratione quam labore sit consectetur?
+            </p>
+            <div class="rating-group">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-blog" id="blog">
+      <div class="container">
+        <h2 class="heading--secondary heading--center">
+          <span>My Blog</span>
+        </h2>
+      </div>
+      <div class="container grid grid--3--cols">
+        <div class="blog-group">
+          <div class="blog-img-group">
+            <img src="./img/blog/1.png" alt="" class="blog-img" />
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Hello World</h3>
+            <p class="blog-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+              tempore fugiat dignissimos, culpa blanditiis possimus error sit!
+              Aut odio labore libero nesciunt repellendus ea, quisquam nobis
+              voluptate ad molestiae laboriosam.
+            </p>
+          </div>
+        </div>
+        <div class="blog-group">
+          <div class="blog-img-group">
+            <img src="./img/blog/angular.png" alt="" class="blog-img" />
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Hello World</h3>
+            <p class="blog-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+              tempore fugiat dignissimos, culpa blanditiis possimus error sit!
+              Aut odio labore libero nesciunt repellendus ea, quisquam nobis
+              voluptate ad molestiae laboriosam.
+            </p>
+          </div>
+        </div>
+        <div class="blog-group">
+          <div class="blog-img-group">
+            <img src="./img/blog/vue.png" alt="" class="blog-img" />
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Hello World</h3>
+            <p class="blog-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+              tempore fugiat dignissimos, culpa blanditiis possimus error sit!
+              Aut odio labore libero nesciunt repellendus ea, quisquam nobis
+              voluptate ad molestiae laboriosam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <h2 class="heading--secondary heading--center">
+          <span>Contact</span>
+        </h2>
+      </div>
+      <div class="container grid grid-contact">
+        <div class="contact-group">
+          <h3 class="contact-title">Don't be shy!</h3>
+          <p class="contact-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repellendus, laborum consequatur! Libero omnis laboriosam fuga
+            molestiae nostrum, doloribus
+          </p>
+
+          <div class="mail-contacts">
+            <div class="mail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="mail-contact">
+              <div class="mail-title">Mail Me</div>
+              <div class="mail">
+                <a href="mailto:suumyatnoe2001n@gmail.com"
+                  >suumyatnoe2001n@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="phone-contacts">
+            <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="phone-contact">
+              <div class="phone-title">Call Me</div>
+              <div class="phone">
+                <a href="tel:+959970081557"> +959970081557</a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="social-group">
+            <li>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-square-twitter social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-youtube social-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="input-group">
+          
+            <form action="" class="form-input">
+              <div class="first-row">
+              <input type="text" name="" id="" placeholder="Your Name"  class="input" />
+              <input type="email" name="" id="" placeholder="Your Email" class="input" />
+              <input type="text" name="" id="" placeholder="Your Subject" class="input" />
+            </div>
+            <div class="second-row">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="third-row">
+              <input type="submit" value="Submit" class="submit-btn">
+            </div>
+            </form>
+          
+          </div>
+
+        </div>
+      </div>
+    </section>
     <!-- Font-awesome Link -->
     <link
       rel="stylesheet"
@@ -941,6 +1178,6 @@
       href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
     <!-- Script Link -->
-    <link rel="stylesheet" href="./js/script.js" />
+    <script src="./js/script.js"></script>
   </body>
 </html>
