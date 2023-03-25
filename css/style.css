@@ -78,6 +78,29 @@
   margin-bottom: 4.8rem;
 }
 
+/* Text Writing Effect */
+
+.hero-title .text {
+  position: relative;
+}
+
+.hero-title {
+  overflow: hidden;
+}
+
+.sec-text::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-primary);
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid var(--text);
+  animation: textWriting 4s steps(12) infinite;
+}
+
 /***************************/
 /* About Section */
 /***************************/
@@ -546,4 +569,15 @@
   background-color: var(--primary);
   color: var(--bg-secondary);
   border: 1px solid var(--primary-shade);
+}
+
+/* Animation */
+@keyframes textWriting {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
 }
